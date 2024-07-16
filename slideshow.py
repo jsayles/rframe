@@ -4,6 +4,7 @@
 ################################################################################
 
 import os
+import sys
 
 import tkinter as tk 
 from tkinter import *
@@ -15,10 +16,17 @@ WAIT_MS = 10000
 
 os.environ["DISPLAY"] = ":0"
 
+
+def close(event):
+    sys.exit()
+
+
 root=tk.Tk()
 root.geometry("1080x1920")
 root.attributes('-fullscreen',True)
-root.config(cursor=None)
+root.config(cursor="none")
+root.bind('<Escape>',close)
+
 
 img1=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photo1.jpg")) 
 img2=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photo2.jpg")) 
@@ -50,4 +58,3 @@ def move():
 
 move()
 root.mainloop()
-exit(0)
