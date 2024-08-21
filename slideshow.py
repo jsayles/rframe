@@ -12,7 +12,7 @@ from PIL import Image
 from PIL import ImageTk 
 
 
-WAIT_MS = 10000
+WAIT_MS = 30000
 
 os.environ["DISPLAY"] = ":0"
 
@@ -28,10 +28,10 @@ root.config(cursor="none")
 root.bind('<Escape>',close)
 
 
-img1=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photo1.jpg")) 
-img2=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photo2.jpg")) 
-img3=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photo3.jpg")) 
-img4=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photo4.jpg")) 
+img1=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo1.jpg")) 
+img2=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo2.jpg")) 
+img3=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo3.jpg")) 
+img4=ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo4.jpg")) 
 
 l=Label() 
 l.pack() 
