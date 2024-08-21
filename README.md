@@ -1,4 +1,6 @@
-#Pi Frame
+#R Frame
+
+https://radxa.com/products/zeros/zero3w/
 
 ## Install
 - sudo apt-get install feh lightdm openbox 
@@ -17,7 +19,6 @@ sudo apt-get install -y autoconf autoconf-archive automake build-essential git l
 
 # RSetup - enable i2c and spi overlays
 
-
-- cd piframe
+- cd rframe
 - pipenv install
 - pipenv install adafruit-blinka adafruit-circuitpython-seesaw
