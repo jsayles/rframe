@@ -5,6 +5,7 @@
 # pylint: disable=broad-except, eval-used, unused-import
 
 """CircuitPython I2C Device Address Scan"""
+
 import time
 import board
 import busio
@@ -48,4 +49,3 @@ if len(found_i2c):
         time.sleep(2)
 else:
     print("No valid I2C bus found.")
-

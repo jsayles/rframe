@@ -45,4 +45,3 @@ while True:
     if button.value and button_held:
         button_held = False
         print("Button released")
-

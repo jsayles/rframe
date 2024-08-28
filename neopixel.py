@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 """I2C rotary encoder NeoPixel color picker and brightness setting example."""
+
 import board
 from rainbowio import colorwheel
 from adafruit_seesaw import seesaw, neopixel, rotaryio, digitalio
@@ -50,4 +51,3 @@ while True:
                 pixel.brightness = max(0, pixel.brightness - 0.1)
 
     last_position = position
-

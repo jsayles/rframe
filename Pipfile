@@ -3,12 +3,16 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[packages]
-adafruit-python-shell = "*"
-adafruit-blinka = "*"
-adafruit-circuitpython-seesaw = "*"
-
 [dev-packages]
+ipython = "*"
+ruff = "*"
+
+[packages]
+adafruit-python-shell = "~=1.8"
+adafruit-blinka = "~=8.47"
+adafruit-circuitpython-seesaw = "~=1.16"
+Pillow = "~=10.4"
+tk = "~=0.1"
 
 [requires]
 python_version = "3.9"
