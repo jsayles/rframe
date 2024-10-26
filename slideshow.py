@@ -32,6 +32,7 @@ img1 = ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo1.jpg"))
 img2 = ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo2.jpg"))
 img3 = ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo3.jpg"))
 img4 = ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo4.jpg"))
+img5 = ImageTk.PhotoImage(Image.open("/home/jacob/rframe/photos/photo5.jpg"))
 
 label = Label()
 label.pack()
@@ -42,7 +43,7 @@ x = 1
 
 def move():
     global x
-    if x == 5:
+    if x == 6:
         x = 1
 
     if x == 1:
@@ -53,6 +54,8 @@ def move():
         label.config(image=img3)
     elif x == 4:
         label.config(image=img4)
+    elif x == 5:
+        label.config(image=img5)
 
     x = x + 1
     root.after(WAIT_MS, move)
