@@ -8,11 +8,11 @@ ipython = "*"
 ruff = "*"
 
 [packages]
-adafruit-python-shell = "~=1.8"
-adafruit-blinka = "~=8.47"
-adafruit-circuitpython-seesaw = "~=1.16"
-Pillow = "~=10.4"
+adafruit-python-shell = "~=1.11"
+adafruit-blinka = "~=9.0"
+adafruit-circuitpython-seesaw = "~=1.18"
+Pillow = "~=11.3"
 tk = "~=0.1"
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
