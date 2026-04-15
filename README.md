@@ -22,3 +22,8 @@ sudo apt-get install -y autoconf autoconf-archive automake build-essential git l
 - cd rframe
 - pipenv install
 - pipenv install adafruit-blinka adafruit-circuitpython-seesaw
+
+# Autostart
+
+- cd rframe
+- cp autostart/rframe.desktop ~/.config/autostart/
